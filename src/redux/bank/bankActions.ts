@@ -1,15 +1,15 @@
-import * as actions from "./actionTypes";
+import { ActionType } from "./actionTypes";
 
 export const bankDeposit = (deposit: number) => ({
-  type: actions.BANK_DEPOSIT,
+  type: ActionType.BANK_DEPOSIT,
   payload: { deposit: deposit }
 });
 
 export const bankWithdraw = (withdraw: number) => ({
-  type: actions.BANK_WITHDRAW,
+  type: ActionType.BANK_WITHDRAW,
   payload: { withdraw: withdraw }
 });
 
 export const bankRupt = () => ({
-  type: actions.BANK_RUPT
+  type: ActionType.BANK_RUPT
 });
