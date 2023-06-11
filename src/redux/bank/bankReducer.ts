@@ -1,9 +1,9 @@
 import { ActionType } from "./actionTypes";
 import { Action } from "./types";
 
-type State = {
+interface State {
   bankTotal: number;
-};
+}
 
 const initialState: State = {
   bankTotal: 1000
